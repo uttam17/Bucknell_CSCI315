@@ -1,0 +1,11 @@
+allocator_init() takes in a size and a method of allocation to use. The free-list and allocated_list are created. An int data is initialized with space enough for the total size. I then created and added a new node with that data to the front of free list. Using printList, I then print both the lists to the user.
+
+allocate() takes oin a size and then passes that to the specific method. The type of method was specified when calling allocator_init and is held as an int in the global var type.
+
+first_fit() takes in a size for the node needed to be allocated. It then creates a temp node that points to the front of the free_list. This function checks the size of the first node in free_list which holds the value for the remaining space available to be allocated. If the space needed is greated than the space available, nothing happens and NULL is returned. If less than, the first node in free_list has it's size reduced by the amount requested. Allocated list then gets a node added to it that has the value of the size requested as an attribute. The two lists are printed out to the user to visualize the changes that occurred.
+
+best_fit() acts in a similar way as first_fit. The main difference is that the function traverses the list until size of the node in allocated list is greater than the requested size. Only then is the node placed in allocated list in that location. Every thing else related to adding sizes and making nodes stays the same including printing the lists out at the end of the function.
+
+worst_fit() works very similar to best_fit() except it looks for the spacewhere the current node has more space than the next. This is the "worst fit" and the node is placed there. Everything else stays the same and boths lists are printed out in the end.
+
+deallocate() takes in a pointer to the node needed to be deallocated. Using this, A temporary node is created and points to the back of the allocated list. The list is traversed until the specified node is found. I then take the size and add back to the first node in free_list and then remove and free the node from allocated list. Finally, I print out both lists to display the changes to the user.

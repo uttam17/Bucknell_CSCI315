@@ -1,0 +1,17 @@
+Feedback for Lab8:
+Problem 1 : 1.1 What type(s) of fragmentation is (are) possible with a custom memory allocator like yours? Internal, external or yet something different? [8 points]
+1.2 Propose two or more performance metrics (unrelated to fragmentation) that you could use to assess how well your memory allocator works and describe how you could measure each one. [8 points]
+1.3 Create a new function in your allocator to compute the average fragmentation created in memory after repeated, randomly interleaved calls to your allocate and deallocate functions. Finally, once you have the algorithm for average_frag, implement the corresponding function in the C module that contains your allocator. That is, you will be changing your allocator.h and allocator.c files to include the new function (make sure to use Doxygen comments in your header file to explain what your function does and how its API works). [14 points]
+	Points:  30 / 30
+	Comment: Brilliant
+Problem 2 : Think critically about the pseudo-code given above. Is this algorithm appropriate to bring your allocator to a state where you can have a representative amount of fragmentation? If so, explain why in your answers.txt. If not, describe how you would change this algorithm to be more representative of the typical program. (For this full-credit in this question, you must provide pseudo-code for the complete algorithm that you would implement later in C.) [8 points]
+Now, implement the algorithm of your choice into the main function of your frag-eval.c program. After the loop of dynamic allocation requests, call your average_frag function and display the result on the standard output. [17 points]
+You will need to update your Makefile to contain a rule for building frag-eval.c. [5 points]
+	Points:  20 / 30
+	Comment: no pseudo-code found. also you allocate and deallocate the memory sequentially, which is not random.
+Problem 3 [statistics] : 2.1 For each of the three allocation policies (first-fit, best-fit, and worst-fit), complete R runs using the selected seeds and store each sample you get. Compute the point estimate (the average of your samples) and also the 95% confidence interval. If your confidence interval “looks overly wide” (you will be the judge of how wide is too wide), consider getting more samples. For each policy, report the confidence interval you computed together with the raw data in nicely presented tables (you should have at least one row per sample, and columns for the number of the run, the seed value used, and the sample obtained). You should do this in a spreadsheet called exp-results.xls (or whatever extension is appropriate for the software you used). Please make sure to print or export this spreadsheet file to a PDF called exp-results.pdf.
+2.2 Reflect upon the data you obtained and use it to argue which allocation policy works best for your simulation of allocation/deallocation activity. In answers.txt, write a conjecture of your own to explain why this policy worked better than the others.
+	Points:  36 / 40
+	Comment: compiles with tons of warnings and errors. you need to report confidence interval as intervals.
+
+Total:  86 / 100

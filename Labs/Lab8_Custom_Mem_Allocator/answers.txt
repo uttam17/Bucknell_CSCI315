@@ -1,0 +1,5 @@
+1) There is only external fragmentation because paging is used
+
+2) A few metrics could be used to measure the performance of the memory allocator. The number of fragments created. Additionally, you could also test how long it takes the allocator to find a spot to place the data. This would determine the efficiency of the methods used to place data in memory.
+
+2.2) First Fit it the best method to use as it produced the lowest average fragmentation level. This is because using best fit or worst fit creates more qualifiers that need to be satisfied and therefore creates more fragmentation. Also the overhead of using first fit is smaller than the rest as a side note.
