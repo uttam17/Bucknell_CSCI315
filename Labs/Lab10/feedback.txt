@@ -1,0 +1,18 @@
+Feedback for Lab10:
+Lab Problem 1: file_stat : First, work on file_stat.c and instrument it to print the information marked in red (that is, tackle the TO-DOs in the code). Next, augment the program to print the time of last access and the time of status change for the file given as command-line parameter. Note that you will need to read the man pages for getpwuid(3) and getgrgid(3) to learn how to translate numeric USER ID and GROUP IP to strings, respectively. Make sure to use versions of these calls which are thread-safe – Why you ask? Just to continue the practice of using functions that are thread-safe.
+	Points:  18 / 20
+	Comment: file protection mode is wrong
+Lab Problem 2: traverse : Combine the programs file_stat.c with read_dir.c to create a new program called traverse.c, which will traverse a given directory tree, printing to the standard output the following information: 1)The value of the smallest, the largest, and the average file size. 2)Total number of directories. 3)Total number of regular files, that is, those which are not directories, symbolic links, devices, sockets, or fifos. 4)The name of the file that was most recently modified, and the one that was least recently modified in the directory tree. 5)your program should figure out whether it is a symbolic link and display the appropriate data for the link without traversing it as it would do for a real directory.
+	Points:  20 / 20
+	Comment: Brilliant
+Lab Problem 3: answers : (3.1) Provide an example of an operation on a regular file which changes only it’s time of last status change.
+(3.2) Provide an example of an operation on a regular file which changes it’s time of modification.
+(3.3) Provide an example of an operation on a regular file which changes it’s time of last access.
+(3.4) Provide an example of an application where knowing the maximum file name length is helpful. In this item, you can simply describe a scenario in which a given program needs to have the maximum length of file names.
+	Points:  8 / 8
+	Comment: Brilliant
+Lab Problem 4: send/recv : We are used to working with files as mechanisms of data storage, but we can also use them for interprocess communication. In this problem, you will use a file to store the communication between two types of processes (or rather, programs): sender.c and receiver.c. The file will work very much like a unidirectional channel (a pipe), but one where there can be multiple writers and multiple readers.
+	Points:  20 / 22
+	Comment: your program will not stop printing messages
+
+Total:  66 / 70

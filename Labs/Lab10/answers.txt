@@ -1,0 +1,8 @@
+3.1) chmod u-rx file_stat.c
+
+3.2) echo "Welcome to CSCI315" > read_dir.c
+
+3.3) touch -m --date="Mon Nov 29 19:01:00 IDT 2016" file_stat.c
+
+3.4) If you know the maximum file name length you can create limits for the length of creating files. Also this helps to eliminate possibilites of creating 
+errors with file names that are too long.
