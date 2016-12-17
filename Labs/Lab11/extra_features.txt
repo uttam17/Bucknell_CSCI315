@@ -1,0 +1,18 @@
+Our Extra Features Include:
+(1) Editing
+	 -  One can move left and right, and press backspace and delete.
+(2) History
+	 -  One can click up or down to view the history of commands entered.
+(3) Google
+	 -  If your computer has firefox, you can type "google" into the command prompt
+		and a new window of firefox on google's url will appear.
+(4) Calculator
+	 -  If you want to type a calculation in, you can using "calc [arg0] [command] [arg1]"
+(5) Change directory
+	 -  Changing directories works now with "cd".
+(6) BEEP
+	 -  When you attemp to access a part of the input string buffer, or the buffer of previous
+		commands, that is outside the bounds, the console will beep at you, just like the real
+		one. You can test this by pressing any directional key until you hear the beep.
+(7) Time
+	- Prints out the current time to the user when using command 'time'.

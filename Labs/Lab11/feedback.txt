@@ -1,0 +1,9 @@
+Feedback for Lab11:
+Problem 1 (gshell) : Once everyone has added their contributed extra feature to the common code base, the team should work together to unify all the features into one single source code file called gshell.c. (Modify your prompt to display gshell> instead of ishell>). Place a comment at the start of this C file with the name of the team’s members. The team should also produce Makefile that builds the gshell executable. Work as a team to make sure that the final product works correctly and then distribute the two files to all the team members, who will add them to their individual git repositories.
+	Points:  70 / 70
+	Comment: backspace is not working
+Problem 2 (redirect) : From gshell test redirection with a pipe e.g., $ ps -ef | grep root
+	Points:  26 / 30
+	Comment: ERROR: Garbage option. on ps -ef | grep root
+
+Total:  96 / 100
